@@ -66,6 +66,7 @@ UGent master Design Project (2026–27), loosely based on challenge 6 *"Why Shou
 | Data sources | Self-report/EMA, phone sensors, consumer wearables. **Modular**: the app must also work with only some of them |
 | Evaluation during the project | Interviews and usability tests, plus **small, short user studies with smokers** if feasible (updated 31 Oct 2026). No large data collection, so slow learning components must be shown on public datasets or in simulation |
 | Capacity | 5–6 people, a bit more than one semester, using agentic coding. Software is cheap; people-time for prototypes and user tests is the bottleneck |
+| Chosen direction (31 Oct 2026) | Close to **S2**: modular framework on a BCT taxonomy, rooted in a HAPA phase plan, choosing between phase-dependent interventions; chatbot for intake and phase-transition reviews |
 | Candidate directions | Phase 2 shortlist for the team vote: S1 Quit Lab (personal experiments + claim layer), S2 White-box HAPA coach (direction B + claim layer), S3 One step ahead (anticipatory steering, new form of direction A), S4 HAPA rule scaffold + learning JITAI linked to planner/progress (added after discussion). See [ideas/05](ideas/05_shortlist_for_vote.md) |
 
 #### File structure
@@ -82,7 +83,12 @@ design project/
 │   ├── README.md                 ← scope, file map, 10-point summary, method. START HERE
 │   ├── 01_evidence_base.md … 06_theory_ontologies.md   ← topic files
 │   ├── 07_gap_analysis.md        ← done/not-done matrix, gaps G1–G9, ready-to-implement research
-│   └── references.md             ← consolidated bibliography
+│   ├── references.md             ← consolidated bibliography
+│   └── miro/                     ← S2 deep dive in Miro categories (31 Oct 2026). README = start
+│       ├── 01_research_topics.md … 06_other_findings.md  ← card tables (IDs R, C, P, T, M, O)
+│       ├── references.md         ← bibliography of the deep dive
+│       ├── build_csv.py          ← regenerates csv/ from the "## Miro cards" tables
+│       └── csv/                  ← CSV per category + 07_references.csv for Miro import
 ├── ideas/                        ← phase 2 (done, 31 Oct 2026; awaiting team vote)
 │   ├── README.md                 ← scope, file map, summary, ID scheme. START HERE
 │   ├── 01_scoring_framework.md   ← criteria, weights, sensitivity analysis
